@@ -1,0 +1,29 @@
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+    @return #{$pixels/$context}em
+}
+
+@function letterSpacing($photoshopValue){
+    @return #{$photoshopValue/ 1000}em
+}
+
+@function responsiveWidth($elementWidth,$parentWidth) {
+    @return (($elementWidth/$parentWidth)*100)*1%
+}
+
+@function randomGreyColor(){
+    $alpha: random(3);
+
+    @if $alpha == 1{
+        @return $gridRandom1
+    }
+    @else if $alpha == 2{
+        @return $gridRandom2
+    }
+    @else{
+        @return $gridRandom3
+    }
+
+}
+

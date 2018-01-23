@@ -1,0 +1,46 @@
+#debug{
+  visibility: visible;
+}
+.debug{
+  padding:10px;
+  color:#ffffff;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:bold;
+  font-size:12px;
+  display:block;
+  position:fixed;
+  bottom:0;
+  z-index:20000000;
+  text-align:center;
+}
+#desktop{
+  background-color:#000000;
+  display:block;
+}
+#tablet{
+  background-color:#009900;
+  display:none;
+}
+#smalltablet{
+  background-color:#FF9900;
+  display:none;
+}
+#smartphone{
+  background-color:#AA0000;
+  display:none;
+}
+
+.debugState{
+  padding:10px;
+  color:#ffffff;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:bold;
+  font-size:12px;
+  display:block;
+  position:fixed;
+  bottom:0;
+  z-index:20000000;
+  text-align:center;
+  visibility: hidden;
+  background-color: #aa3688;
+}

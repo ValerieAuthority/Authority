@@ -1,0 +1,128 @@
+header{
+  div.top-head{
+    max-width: $max-width;
+    margin:0 auto;
+    @media screen and (max-width: 1024px){
+      max-width: 750px;
+    }
+    @media screen and (max-width: 767px){
+      max-width: 460px;
+    }
+    @media screen and (max-width: 479px){
+      max-width: 350px;
+    }
+    div.left-container{
+      width: 30%;
+      float: left;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      img{
+        height: 40px;
+      }
+    }
+    @media screen and (max-width: 767px){
+      max-width: 100% !important;
+    }
+    div.mobile-nav{
+      display:none;
+      @media screen and (max-width: 767px){
+        display: inline-block;
+        float: right;
+        width: 65%;
+        text-align: right;
+        padding-top: 30px;
+        padding-bottom: 15px;
+        padding-right: 20px;
+        a {
+          color: $dark-blue;
+          i{
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    nav.right-container{
+      width: 70%;
+      float: right;
+      margin-top: 23px;
+      ul{
+        float:right;
+        @media screen and (max-width: 767px){
+          float:none;
+          text-align:center;
+        }
+        li{
+          display: inline-block;
+          margin-right: 15px;
+          a{
+            color: $black;
+            text-decoration:none;
+            @media screen and (max-width: 767px){
+              color: $white;
+            }
+          }
+          @media screen and (max-width: 767px){
+            display:block;
+            margin-right:0;
+            padding-top: 15px;
+            padding-bottom: 15px;
+          }
+        }
+        li#last-item{
+          border:1px solid $black;
+          padding: 5px;
+          @media screen and (max-width: 767px){
+            border:none;
+            padding-top: 15px;
+            padding-bottom: 15px;
+          }
+        }
+      }
+      @media screen and (max-width: 767px){
+        display:none;
+        width: 100%;
+        float: right;
+        background-color: $dark-blue;
+        color: $white;
+        margin-top:0;
+      }
+    }
+  }
+  div.hero-image{
+    clear:both;
+    background-image: url('../images/header2.jpg');
+    height: 200px;
+    background-size: cover;
+    background-position: center 65%;
+    div.hero-text{
+      max-width: $max-width;
+      margin:0 auto;
+      color: $white;
+      padding-top: 55px;
+      @media screen and (max-width: 1024px){
+        max-width: 750px;
+      }
+      @media screen and (max-width: 767px){
+        max-width: 460px;
+      }
+      @media screen and (max-width: 479px){
+        max-width: 350px;
+      }
+      h1{
+        font-size: 34px;
+        @media screen and (max-width: 767px){
+          font-size: 27px;
+        }
+      }
+      h2{
+        font-size: 23px;
+        font-weight: lighter;
+        color: #cc9f50;
+        @media screen and (max-width: 1024px){
+            font-size: 17px;
+        }
+      }
+    }
+  }
+
+}
