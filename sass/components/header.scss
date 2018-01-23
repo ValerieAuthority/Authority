@@ -19,6 +19,9 @@ header{
       img{
         height: 40px;
       }
+      @media screen and (max-width: 479px){
+        padding-left: 10px;
+      }
     }
     @media screen and (max-width: 767px){
       max-width: 100% !important;
@@ -118,6 +121,16 @@ header{
         font-size: 23px;
         font-weight: lighter;
         color: #cc9f50;
+        span{
+          @media screen and (max-width: 767px){
+            &:last-of-type{
+              display:block;
+            }
+          }
+          @media screen and (max-width: 479px){
+            display:block;
+          }
+        }
         @media screen and (max-width: 1024px){
             font-size: 17px;
         }
