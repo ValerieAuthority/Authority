@@ -15,6 +15,12 @@ section#home{
       @media screen and (max-width: 479px){
         max-width: 350px;
       }
+      &.page{
+        div.item{
+          float: none;
+          width: 100%;
+        }
+      }
       div.item{
         //width: 25%;
         float:left;
